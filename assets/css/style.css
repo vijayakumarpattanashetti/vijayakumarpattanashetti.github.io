@@ -1,0 +1,266 @@
+/* General */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
+}
+
+a {
+  color: #149ddd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #37b3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 25px;
+  height: 30px;
+  right: 25px;
+  bottom: 30px;
+  color: #149ddd;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
+}
+
+.back-to-top p {
+  font-size: 25px;
+}
+
+/* Header */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 15px;
+  background: #040b14;
+  overflow-y: auto;
+}
+
+#main {
+  margin-left: 300px;
+}
+
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
+  #main {
+    margin-left: 0;
+  }
+}
+
+/* Navigation Menu */
+/* Desktop Navigation */
+.nav-menu {
+  padding-top: 40px;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu a {
+  display: flex;
+  align-items: center;
+  color: #a8a9b4;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu :hover > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.mobile-nav-toggle {
+  color: #149ddd;
+}
+
+.mobile-nav-toggle p {
+  writing-mode: tb-rl;
+  position: relative;
+  letter-spacing: -5px;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active #header {
+  left: 0;
+}
+
+.mobile-nav-active .mobile-nav-toggle {
+  color: #fff;
+}
+
+/* Sections */
+section {
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+
+.section-title h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/* Home */
+.home .content h1 {
+  font-weight: 500;
+  font-size: 44px;
+  font-family: 'Poppins', sans-serif;
+  text-align: relative;
+}
+
+.home .content p {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #585772;
+  margin-left: 150px;
+}
+
+/* Experience */
+.experience a {
+  color: #272829;
+}
+
+.experience .section-title p {
+  margin-bottom: -15px;
+}
+
+/* Projects */
+.photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+   
+  -webkit-column-count: 5;
+  -webkit-column-gap:   2%;
+  -moz-column-count:    5;
+  -moz-column-gap:      2%;
+  column-count:         5;
+  column-gap:           2%;
+}
+
+.photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: 15px;
+}
+
+.photos p {
+  margin-bottom: 50px;
+  font-size: 18px;
+  color: #173b6c;
+}
+
+@media (max-width: 1600px) {
+  .photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  column-gap:           5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  column-gap:           5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  column-gap:           5%;
+  }
+}
+
+/* Achievements */
+
+/* Additional Courses & Certifications */
+
+/* Volunteer Activities */
+
+/* Contact */
+.contact {
+  padding-bottom: 130px;
+}
+
+/* Footer */
+#footer {
+  padding: 15px;
+  color: #f4f6fd;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  z-index: 9999;
+  background: #040b14;
+}
+
+@media (max-width: 1199px) {
+  #footer {
+    position: static;
+    width: auto;
+    padding-right: 20px 15px;
+  }
+}
